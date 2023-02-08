@@ -9,8 +9,8 @@ router.get('/', function (req, res, next) {
 router.get('/all', function (req, res, next) {
   res.json({
     message: 'Thats All',
-    env: process.env.NODE_ENV,
-    good: process.env.GOOD,
+    env: process.env.NODE_ENV ?? 'Not set',
+    good: process.env.GOOD ?? 'Not set',
     port: process.env.PORT
   })
 })
