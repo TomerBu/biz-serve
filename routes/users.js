@@ -11,6 +11,7 @@ router.get('/all', function (req, res, next) {
     message: 'Thats All',
     env: process.env.NODE_ENV,
     good: process.env.GOOD,
+    port: process.env.PORT
   })
 })
 
